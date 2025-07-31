@@ -6,13 +6,18 @@
   <title>LUMINUS BEAUTY</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
       background-color: #f8f7f5;
       color: #2c2c2c;
     }
-    /* Gornja traka s adresom */
+
     #marquee {
       background-color: #e3e3e3;
       color: #555;
@@ -20,14 +25,14 @@
       font-size: 14px;
       overflow: hidden;
       white-space: nowrap;
-      box-sizing: border-box;
     }
+
     #marquee p {
       display: inline-block;
       padding-left: 100%;
       animation: marquee 15s linear infinite;
-      margin: 0;
     }
+
     @keyframes marquee {
       0% { transform: translateX(0); }
       100% { transform: translateX(-100%); }
@@ -38,29 +43,30 @@
       padding: 20px 10px 5px;
       background-color: white;
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-      user-select: none;
     }
+
     header h1 {
-      margin: 0;
       font-weight: 700;
       font-size: 42px;
       text-transform: uppercase;
       letter-spacing: 2px;
       color: #2c2c2c;
-      white-space: nowrap; /* NE dozvoli prijelom */
+      white-space: nowrap;
     }
+
     nav {
       margin-top: 10px;
     }
+
     nav a {
-      margin: 0 15px;
       text-decoration: none;
       color: #555;
       font-weight: 700;
       font-size: 14px;
       letter-spacing: 1px;
-      transition: color 0.3s ease;
+      margin: 0 5px;
     }
+
     nav a:hover {
       color: #b47b4f;
     }
@@ -74,6 +80,7 @@
     section {
       margin-bottom: 50px;
     }
+
     section h2 {
       border-bottom: 2px solid #b47b4f;
       padding-bottom: 6px;
@@ -83,11 +90,10 @@
       color: #4a4a4a;
     }
 
-    /* Popis usluga */
     ul.services-list {
       list-style-type: none;
-      padding-left: 0;
     }
+
     ul.services-list li {
       margin-bottom: 12px;
       font-size: 18px;
@@ -96,11 +102,16 @@
       border-bottom: 1px solid #ddd;
       padding-bottom: 8px;
     }
+
     ul.services-list li:hover {
       color: #b47b4f;
     }
 
-    /* Kontakt */
+    ul.services-list li a {
+      text-decoration: none;
+      color: inherit;
+    }
+
     #kontakt p, #kontakt a {
       font-size: 16px;
       color: #2c2c2c;
@@ -108,11 +119,11 @@
       display: block;
       margin-bottom: 10px;
     }
+
     #kontakt a:hover {
       color: #b47b4f;
     }
 
-    /* O nama */
     #onama p {
       font-size: 16px;
       line-height: 1.5;
@@ -129,10 +140,9 @@
   <header>
     <h1>LUMINUS BEAUTY</h1>
     <nav>
-      <a href="#tretmani">TRETMANI</a>
-      <a href="#edukacije">EDUKACIJE</a>
+      <a href="#tretmani">TRETMANI</a> |
+      <a href="#edukacije">EDUKACIJE</a> |
       <a href="#kontakt">KONTAKT</a>
-      <a href="#onama">O NAMA</a>
     </nav>
   </header>
 
@@ -168,9 +178,4 @@
     <section id="kontakt">
       <h2>KONTAKT</h2>
       <p>📞 <a href="tel:0998696029">0998696029</a></p>
-      <p>✉️ <a href="mailto:antonia.sorda@icloud.com">antonia.sorda@icloud.com</a></p>
-      <p>📍 Svete Ane 10, Osijek</p>
-    </section>
-  </main>
-</body>
-</html>
+      <p>✉️ <a href="mailto
