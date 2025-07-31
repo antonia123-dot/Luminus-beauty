@@ -21,25 +21,50 @@
     header {
       text-align: center;
       margin-bottom: 40px;
+      position: relative;
+      overflow: hidden;
+      height: 3rem; /* dovoljno visine za scroll adresu i naslov */
+    }
+    .scrolling-address {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      font-size: 0.9rem;
+      color: #666;
+      white-space: nowrap;
+      overflow: hidden;
+      box-sizing: border-box;
+      animation: marquee 10s linear infinite;
+      font-weight: 500;
+    }
+    @keyframes marquee {
+      0%   { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
     }
     header h1 {
       text-transform: uppercase;
       letter-spacing: 4px;
       font-weight: 700;
       font-size: 2.5rem;
-      margin-bottom: 0.2em;
+      margin: 2rem 0 0 0;
+      position: relative;
+      z-index: 1;
     }
     header nav {
       font-weight: 500;
       font-size: 1rem;
       color: #555;
       margin-bottom: 0.3em;
+      position: relative;
+      z-index: 1;
     }
     header p.tagline {
       font-weight: 300;
       font-size: 0.8rem;
       color: #888;
       margin-top: 0;
+      position: relative;
+      z-index: 1;
     }
     section {
       max-width: 600px;
@@ -79,6 +104,7 @@
 </head>
 <body>
   <header>
+    <div class="scrolling-address">Ulica Svete Ane 10, Osijek</div>
     <h1>LUMINUS BEAUTY</h1>
     <nav>TRETMANI &nbsp;|&nbsp; EDUKACIJE &nbsp;|&nbsp; KONTAKT</nav>
     <p class="tagline">You, but better</p>
