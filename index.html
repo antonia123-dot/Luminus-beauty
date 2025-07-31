@@ -1,163 +1,87 @@
 <!DOCTYPE html>
 <html lang="hr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Luminus Beauty</title>
-  <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #f8f6f3;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Luminus Beauty</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-    header {
-      background-color: #ffffff;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f8f7;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
 
-    .marquee {
-      background-color: #f2e9e4;
-      color: #5a4b4b;
-      font-weight: bold;
-      padding: 8px 0;
-      text-align: center;
-    }
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
 
-    h1 {
-      font-size: 40px;
-      text-transform: uppercase;
-      margin: 10px 0 5px;
-    }
+  header h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0;
+  }
 
-    .nav {
-      font-size: 14px;
-      margin-bottom: 10px;
-      letter-spacing: 2px;
-    }
+  nav {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+  }
 
-    .tagline {
-      font-size: 16px;
-      color: #999;
-      margin-bottom: 30px;
-    }
+  nav span {
+    margin: 0 15px;
+  }
 
-    .container {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
+  .services {
+    max-width: 600px;
+    margin: auto;
+  }
 
-    .section-title {
-      font-size: 28px;
-      margin-bottom: 20px;
-      border-bottom: 2px solid #d4af37;
-      display: inline-block;
-      padding-bottom: 5px;
-    }
+  .service {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
 
-    ul.service-list {
-      list-style: none;
-      padding: 0;
-    }
+  .service-header {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #222;
+    text-decoration: none;
+  }
 
-    ul.service-list li {
-      margin: 15px 0;
-    }
-
-    ul.service-list li a {
-      text-decoration: none;
-      color: #d4af37;
-      font-weight: bold;
-    }
-
-    ul.service-list li a:hover {
-      text-decoration: underline;
-    }
-
-    .service-description {
-      margin-top: 50px;
-    }
-
-    .service-description h2 {
-      color: #d4af37;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      font-size: 14px;
-      color: #777;
-      border-top: 1px solid #ddd;
-      margin-top: 60px;
-    }
-  </style>
+  .service-header:hover {
+    color: #a67c00;
+  }
+</style>
 </head>
 <body>
-
-  <div class="marquee">Ulica Svete Ane 10, Osijek</div>
-
   <header>
-    <h1>Luminus Beauty</h1>
-    <div class="nav">TRETMANI | EDUKACIJE | KONTAKT | O NAMA</div>
-    <p class="tagline">you, but better</p>
+    <h1>LUMINUS BEAUTY</h1>
+    <nav>
+      <span>TRETMANI</span> | <span>EDUKACIJE</span> | <span>KONTAKT</span>
+    </nav>
   </header>
 
-  <div class="container">
-    <h2 class="section-title">Naše usluge</h2>
-    <ul class="service-list">
-      <li><a href="#puder-obrve">1. Puder obrve</a></li>
-      <li><a href="#lip-blush">2. Lip Blush</a></li>
-      <li><a href="#lash-lift">3. Lash Lift</a></li>
-    </ul>
-
-    <div id="puder-obrve" class="service-description">
-      <h2>1. Puder obrve</h2>
-      <p>Puder obrve su polutrajna šminka mikropigmentacije. Polutrajna znači da kada napravimo obrve one traju od 1–2 godine, a to zavisi najviše o organizmu. Mikropigmentacija je proces unošenja pigmenta u površinski sloj kože.</p>
-      <p>Zapravo i pojednostavljeno – puder obrve su tretman s kojim ćeš zaboraviti brigu oko obrva. Tretman koji će dati tvom licu točno taj touch kojim će lice dobiti profinjeniji, otvoreniji look sa naglaskom na oči, a totalno će nenametljivo dati definiciju.</p>
-      <p>Cijeli proces nije bolan, a sve o tome možeš još pogledati na ovom YouTube videu: <a href="https://youtu.be/7Ik7R_ZLDNM?si=i5JPQr5a0HMWHyp7" target="_blank">klikni ovdje</a>.</p>
-      <p>Obrati mi se s povjerenjem, zajedno ćemo isčarobirati savršene obrve i uštedjeti ti 15 minuta svako jutro. Konzultacije su također besplatne i slobodno pripremi 100 pitanja – na svako imam odgovor! ❤️</p>
+  <div class="services">
+    <div class="service">
+      <a href="puder-obrve.html" class="service-header">Puder obrve</a>
     </div>
-
-    <div id="lip-blush" class="service-description">
-      <h2>2. Lip Blush – polutrajna šminka usana</h2>
-      <p>Istaknite prirodnu ljepotu svojih usana! Lip Blush je moderna tehnika polutrajne šminke koja nježno naglašava boju, oblik i punoću usana.</p>
-      <p><strong>Što možete očekivati?</strong></p>
-      <ul>
-        <li>✔ Suptilan, prirodan rezultat</li>
-        <li>✔ Efekt "blago našminkanih" usana 24/7</li>
-        <li>✔ Korekcija nepravilnosti i asimetrije</li>
-        <li>✔ Dugotrajni rezultati (do 2 godine, uz održavanje)</li>
-      </ul>
-      <p><strong>Idealno za:</strong> one koji žele diskretnu, ali primjetnu definiciju usana, korigirati asimetriju, te uštedjeti vrijeme.</p>
-      <p><strong>Postupak:</strong> Nakon konzultacija i odabira nijanse, radimo skicu. Pigment se nježno unosi u površinski sloj kože pomoću posebne mikropigmentacijske tehnike. Traje oko 2 sata, s korekcijom nakon 6–8 tjedana.</p>
+    <div class="service">
+      <a href="lip-blush.html" class="service-header">Lip Blush – polutrajna šminka usana</a>
     </div>
-
-    <div id="lash-lift" class="service-description">
-      <h2>3. Lash Lift – Prirodno podignute i uvijene trepavice</h2>
-      <p>Probudi se sa savršeno podignutim trepavicama – bez uvijača i maskare! Lash Lift nježno podiže, uvija i definira tvoje prirodne trepavice, čineći ih vizualno dužima, gušćima i tamnijima.</p>
-      <p><strong>Prednosti:</strong></p>
-      <ul>
-        <li>✔️ Ističe tvoje prirodne trepavice bez ekstenzija</li>
-        <li>✔️ Traje 6–8 tjedana</li>
-        <li>✔️ Bezbolan, brz i siguran tretman</li>
-        <li>✔️ Otporan na vlagu, suze i znoj</li>
-        <li>✔️ Nema oštećenja dlačica uz pravilnu njegu</li>
-      </ul>
-      <p><strong>Tijek tretmana:</strong> Trepavice se učvršćuju na silikonski jastučić i tretiraju lifting losionima koji ih podižu od korijena. Po želji se dodaje i bojenje trepavica.</p>
+    <div class="service">
+      <a href="lash-lift.html" class="service-header">Lash Lift – Prirodno podignute i uvijene trepavice</a>
     </div>
+    <!-- Ostale usluge po potrebi dodaj -->
   </div>
-
-  <footer>
-    © 2025 Luminus Beauty • antonia.sorda@icloud.com • 099 869 6029
-  </footer>
-
 </body>
 </html>
