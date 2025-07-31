@@ -2,145 +2,162 @@
 <html lang="hr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Luminus Beauty | Puder obrve, Osijek</title>
-  <meta name="description" content="Luminus Beauty u Osijeku nudi puder obrve, lip blush, lash lift, brow lift, nokte, piercing i profesionalne edukacije. Rezerviraj svoj termin već danas!" />
-  <meta name="keywords" content="puder obrve Osijek, puder brows Osijek, obrve Osijek, Luminus Beauty, lip blush Osijek, brow lift, lash lift, beauty salon Osijek, edukacije puder obrve" />
-  <meta name="author" content="Luminus Beauty" />
-  
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luminus Beauty</title>
   <style>
     body {
       font-family: 'Montserrat', sans-serif;
+      background-color: #f8f6f3;
       color: #333;
       margin: 0;
-      padding: 20px;
-      background-color: #f9f9f9;
+      padding: 0;
     }
+
     header {
+      background-color: #ffffff;
+      padding: 20px;
       text-align: center;
-      margin-bottom: 40px;
-      position: relative;
-      overflow: hidden;
-      height: 3rem; /* dovoljno visine za scroll adresu i naslov */
-    }
-    .scrolling-address {
-      position: absolute;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
       top: 0;
-      width: 100%;
-      font-size: 0.9rem;
-      color: #666;
-      white-space: nowrap;
-      overflow: hidden;
-      box-sizing: border-box;
-      animation: marquee 10s linear infinite;
-      font-weight: 500;
+      z-index: 999;
     }
-    @keyframes marquee {
-      0%   { transform: translateX(100%); }
-      100% { transform: translateX(-100%); }
+
+    .marquee {
+      background-color: #f2e9e4;
+      color: #5a4b4b;
+      font-weight: bold;
+      padding: 8px 0;
+      text-align: center;
     }
-    header h1 {
+
+    h1 {
+      font-size: 40px;
       text-transform: uppercase;
-      letter-spacing: 4px;
-      font-weight: 700;
-      font-size: 2.5rem;
-      margin: 2rem 0 0 0;
-      position: relative;
-      z-index: 1;
+      margin: 10px 0 5px;
     }
-    header nav {
-      font-weight: 500;
-      font-size: 1rem;
-      color: #555;
-      margin-bottom: 0.3em;
-      position: relative;
-      z-index: 1;
+
+    .nav {
+      font-size: 14px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
     }
-    header p.tagline {
-      font-weight: 300;
-      font-size: 0.8rem;
-      color: #888;
-      margin-top: 0;
-      position: relative;
-      z-index: 1;
+
+    .tagline {
+      font-size: 16px;
+      color: #999;
+      margin-bottom: 30px;
     }
-    section {
-      max-width: 600px;
-      margin: 0 auto 40px auto;
+
+    .container {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
     }
-    section h2 {
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 8px;
+
+    .section-title {
+      font-size: 28px;
       margin-bottom: 20px;
-      font-weight: 700;
+      border-bottom: 2px solid #d4af37;
+      display: inline-block;
+      padding-bottom: 5px;
     }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-      font-weight: 500;
-      color: #444;
+
+    ul.service-list {
+      list-style: none;
+      padding: 0;
     }
-    ul li {
-      padding: 6px 0;
-      border-bottom: 1px solid #eee;
+
+    ul.service-list li {
+      margin: 15px 0;
     }
-    ul li:last-child {
-      border-bottom: none;
+
+    ul.service-list li a {
+      text-decoration: none;
+      color: #d4af37;
+      font-weight: bold;
     }
-    section.contact p {
-      font-weight: 600;
-      font-size: 1.1rem;
-      margin: 8px 0;
+
+    ul.service-list li a:hover {
+      text-decoration: underline;
     }
+
+    .service-description {
+      margin-top: 50px;
+    }
+
+    .service-description h2 {
+      color: #d4af37;
+    }
+
     footer {
       text-align: center;
-      color: #aaa;
-      font-size: 0.9rem;
+      padding: 30px;
+      font-size: 14px;
+      color: #777;
+      border-top: 1px solid #ddd;
       margin-top: 60px;
     }
   </style>
 </head>
 <body>
+
+  <div class="marquee">Ulica Svete Ane 10, Osijek</div>
+
   <header>
-    <div class="scrolling-address">Ulica Svete Ane 10, Osijek</div>
-    <h1>LUMINUS BEAUTY</h1>
-    <nav>TRETMANI &nbsp;|&nbsp; EDUKACIJE &nbsp;|&nbsp; KONTAKT</nav>
-    <p class="tagline">You, but better</p>
+    <h1>Luminus Beauty</h1>
+    <div class="nav">TRETMANI | EDUKACIJE | KONTAKT | O NAMA</div>
+    <p class="tagline">you, but better</p>
   </header>
 
-  <section class="services">
-    <h2>Naše usluge</h2>
-    <ul>
-      <li>Puder obrve</li>
-      <li>Lip blush</li>
-      <li>Lash lift</li>
-      <li>Brow lift</li>
-      <li>Tetoviranje</li>
-      <li>Nokti</li>
-      <li>Piercing</li>
+  <div class="container">
+    <h2 class="section-title">Naše usluge</h2>
+    <ul class="service-list">
+      <li><a href="#puder-obrve">1. Puder obrve</a></li>
+      <li><a href="#lip-blush">2. Lip Blush</a></li>
+      <li><a href="#lash-lift">3. Lash Lift</a></li>
     </ul>
-  </section>
 
-  <section class="education">
-    <h2>Edukacije</h2>
-    <ul>
-      <li>Puder obrve</li>
-      <li>Lip blush</li>
-      <li>Lash & Brow lift</li>
-      <li>Tetoviranje</li>
-    </ul>
-  </section>
+    <div id="puder-obrve" class="service-description">
+      <h2>1. Puder obrve</h2>
+      <p>Puder obrve su polutrajna šminka mikropigmentacije. Polutrajna znači da kada napravimo obrve one traju od 1–2 godine, a to zavisi najviše o organizmu. Mikropigmentacija je proces unošenja pigmenta u površinski sloj kože.</p>
+      <p>Zapravo i pojednostavljeno – puder obrve su tretman s kojim ćeš zaboraviti brigu oko obrva. Tretman koji će dati tvom licu točno taj touch kojim će lice dobiti profinjeniji, otvoreniji look sa naglaskom na oči, a totalno će nenametljivo dati definiciju.</p>
+      <p>Cijeli proces nije bolan, a sve o tome možeš još pogledati na ovom YouTube videu: <a href="https://youtu.be/7Ik7R_ZLDNM?si=i5JPQr5a0HMWHyp7" target="_blank">klikni ovdje</a>.</p>
+      <p>Obrati mi se s povjerenjem, zajedno ćemo isčarobirati savršene obrve i uštedjeti ti 15 minuta svako jutro. Konzultacije su također besplatne i slobodno pripremi 100 pitanja – na svako imam odgovor! ❤️</p>
+    </div>
 
-  <section class="contact">
-    <h2>Kontakt</h2>
-    <p>📞 099 869 6029</p>
-    <p>📧 antonia.sorda@icloud.com</p>
-  </section>
+    <div id="lip-blush" class="service-description">
+      <h2>2. Lip Blush – polutrajna šminka usana</h2>
+      <p>Istaknite prirodnu ljepotu svojih usana! Lip Blush je moderna tehnika polutrajne šminke koja nježno naglašava boju, oblik i punoću usana.</p>
+      <p><strong>Što možete očekivati?</strong></p>
+      <ul>
+        <li>✔ Suptilan, prirodan rezultat</li>
+        <li>✔ Efekt "blago našminkanih" usana 24/7</li>
+        <li>✔ Korekcija nepravilnosti i asimetrije</li>
+        <li>✔ Dugotrajni rezultati (do 2 godine, uz održavanje)</li>
+      </ul>
+      <p><strong>Idealno za:</strong> one koji žele diskretnu, ali primjetnu definiciju usana, korigirati asimetriju, te uštedjeti vrijeme.</p>
+      <p><strong>Postupak:</strong> Nakon konzultacija i odabira nijanse, radimo skicu. Pigment se nježno unosi u površinski sloj kože pomoću posebne mikropigmentacijske tehnike. Traje oko 2 sata, s korekcijom nakon 6–8 tjedana.</p>
+    </div>
+
+    <div id="lash-lift" class="service-description">
+      <h2>3. Lash Lift – Prirodno podignute i uvijene trepavice</h2>
+      <p>Probudi se sa savršeno podignutim trepavicama – bez uvijača i maskare! Lash Lift nježno podiže, uvija i definira tvoje prirodne trepavice, čineći ih vizualno dužima, gušćima i tamnijima.</p>
+      <p><strong>Prednosti:</strong></p>
+      <ul>
+        <li>✔️ Ističe tvoje prirodne trepavice bez ekstenzija</li>
+        <li>✔️ Traje 6–8 tjedana</li>
+        <li>✔️ Bezbolan, brz i siguran tretman</li>
+        <li>✔️ Otporan na vlagu, suze i znoj</li>
+        <li>✔️ Nema oštećenja dlačica uz pravilnu njegu</li>
+      </ul>
+      <p><strong>Tijek tretmana:</strong> Trepavice se učvršćuju na silikonski jastučić i tretiraju lifting losionima koji ih podižu od korijena. Po želji se dodaje i bojenje trepavica.</p>
+    </div>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Luminus Beauty. Sva prava pridržana.</p>
+    © 2025 Luminus Beauty • antonia.sorda@icloud.com • 099 869 6029
   </footer>
+
 </body>
 </html>
