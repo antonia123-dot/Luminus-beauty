@@ -2,166 +2,159 @@
 <html lang="hr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Luminus Beauty</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LUMINUS BEAUTY</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     body {
+      margin: 0; padding: 0;
       font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      background-color: #f7f7f7;
+      background-color: #f7f6f4;
       color: #333;
     }
-
     .marquee {
-      background-color: #e0e0e0;
-      padding: 10px;
-      font-weight: bold;
+      background-color: #e0ddd9;
+      color: #000;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 10px 0;
       overflow: hidden;
       white-space: nowrap;
+      box-sizing: border-box;
     }
-
     .marquee span {
       display: inline-block;
       padding-left: 100%;
-      animation: scroll-left 10s linear infinite;
+      animation: marquee 15s linear infinite;
     }
-
-    @keyframes scroll-left {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
+    @keyframes marquee {
+      0%   { transform: translate(0, 0); }
+      100% { transform: translate(-100%, 0); }
     }
-
     header {
-      text-align: center;
-      padding: 40px 20px 10px;
+      background-color: #fff;
+      padding: 20px 20px 10px 20px;
+      border-bottom: 1px solid #ddd;
     }
-
     header h1 {
+      margin: 0;
+      font-weight: 700;
       font-size: 36px;
-      letter-spacing: 3px;
       text-transform: uppercase;
-      margin-bottom: 10px;
+      letter-spacing: 2px;
+      color: #2c2c2c;
     }
-
-    .subtitle {
-      font-size: 14px;
-      margin-bottom: 30px;
-      color: #666;
-    }
-
     nav {
-      text-align: center;
+      margin-top: 10px;
+      display: flex;
+      gap: 30px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    nav a {
+      color: #444;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    nav a:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px 40px 20px;
+    }
+    section h2 {
+      font-weight: 700;
+      font-size: 24px;
+      margin: 0 0 10px 0;
+      text-align: left;
+    }
+    .line {
+      width: 100%;
+      height: 2px;
+      background-color: #c1beba;
       margin-bottom: 30px;
     }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #444;
-      font-weight: 600;
-    }
-
-    section {
-      max-width: 800px;
-      margin: 0 auto 40px;
-      padding: 0 20px;
-    }
-
-    section h2 {
-      font-size: 24px;
-      margin-bottom: 15px;
-      text-align: center;
-    }
-
     ul {
       list-style: none;
       padding: 0;
-      text-align: center;
+      margin: 0 0 40px 0;
     }
-
     ul li {
-      margin: 10px 0;
+      margin-bottom: 12px;
+      font-size: 16px;
     }
-
     ul li a {
-      text-decoration: none;
-      color: #0077aa;
-      font-weight: 500;
-    }
-
-    footer {
-      background-color: #eaeaea;
-      padding: 20px;
-      text-align: center;
-      font-size: 14px;
       color: #555;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    ul li a:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+    footer {
+      background-color: #e0ddd9;
+      padding: 20px;
+      font-size: 14px;
+      color: #222;
     }
   </style>
 </head>
 <body>
 
-  <!-- Adresa -->
-  <div class="marquee"><span>Svete Ane 10, Osijek</span></div>
+  <div class="marquee"><span>Ulica Svete Ane 10, Osijek</span></div>
 
-  <!-- Naslov -->
   <header>
     <h1>LUMINUS BEAUTY</h1>
-    <div class="subtitle">you, but better</div>
+    <nav>
+      <a href="#tretmani">TRETMANI</a>
+      <a href="#edukacije">EDUKACIJE</a>
+      <a href="#kontakt">KONTAKT</a>
+      <a href="#onama">O NAMA</a>
+    </nav>
   </header>
 
-  <!-- Navigacija -->
-  <nav>
-    <a href="#tretmani">TRETMANI</a> |
-    <a href="#edukacije">EDUKACIJE</a> |
-    <a href="#kontakt">KONTAKT</a>
-  </nav>
-
-  <!-- Tretmani -->
   <section id="tretmani">
-    <h2>Naši tretmani</h2>
+    <h2>Tretmani</h2>
+    <div class="line"></div>
     <ul>
       <li><a href="puder-obrve.html">Puder obrve</a></li>
-      <li><a href="#">Lip blush</a></li>
-      <li><a href="#">Lash lift</a></li>
-      <li><a href="#">Brow lift</a></li>
+      <li><a href="lip-blush.html">Lip blush</a></li>
+      <li><a href="lash-lift.html">Lash lift</a></li>
+      <li><a href="brow-lift.html">Brow lift</a></li>
+      <li><a href="#">Tetoviranje</a></li>
       <li><a href="#">Nokti</a></li>
       <li><a href="#">Piercing</a></li>
     </ul>
   </section>
 
-  <!-- Edukacije -->
   <section id="edukacije">
     <h2>Edukacije</h2>
+    <div class="line"></div>
     <ul>
-      <li><a href="#">Edukacija za puder obrve</a></li>
+      <li><a href="#">Edukacije za puder obrve</a></li>
       <li><a href="#">Edukacija za lip blush</a></li>
       <li><a href="#">Edukacija za lash & brow lift</a></li>
       <li><a href="#">Edukacije za tetoviranje</a></li>
     </ul>
   </section>
 
-  <!-- O nama -->
-  <section id="o-nama">
+  <section id="onama">
     <h2>O nama</h2>
-    <p style="text-align: center;">
-      Dobrodošli u Luminus Beauty – tvoj prostor ljepote, elegancije i profesionalne njege.
-      Naš cilj je pružiti vrhunsku uslugu i znanje kroz tretmane i edukacije koje prilagođavamo svakom klijentu.
-    </p>
+    <div class="line"></div>
+    <p>Dobrodošli u Luminus Beauty – mjesto gdje prirodna ljepota i stručnost idu ruku pod ruku. Naš cilj je pružiti ti tretmane i edukacije najviše kvalitete u opuštenoj i elegantnoj atmosferi. Obrati nam se s povjerenjem i prepusti se rukama profesionalaca.</p>
   </section>
 
-  <!-- Kontakt -->
   <section id="kontakt">
     <h2>Kontakt</h2>
-    <p style="text-align: center;">
-      📞 099 869 6029<br />
-      📧 antonia.sorda@icloud.com
-    </p>
+    <div class="line"></div>
+    <p>Telefon: 0998696029</p>
+    <p>Email: antonia.sorda@icloud.com</p>
   </section>
 
-  <!-- Footer -->
   <footer>
-    © 2025 Luminus Beauty | Svete Ane 10, Osijek
+    &copy; 2025 Luminus Beauty. Sva prava pridržana.
   </footer>
 
 </body>
