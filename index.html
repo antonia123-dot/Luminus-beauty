@@ -1,87 +1,168 @@
 <!DOCTYPE html>
 <html lang="hr">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Luminus Beauty</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luminus Beauty</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
 
-  body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f9f8f7;
-    color: #333;
-    margin: 0;
-    padding: 20px;
-  }
+    .marquee {
+      background-color: #e0e0e0;
+      padding: 10px;
+      font-weight: bold;
+      overflow: hidden;
+      white-space: nowrap;
+    }
 
-  header {
-    text-align: center;
-    margin-bottom: 30px;
-  }
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 10s linear infinite;
+    }
 
-  header h1 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 3rem;
-    margin: 0;
-  }
+    @keyframes scroll-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
 
-  nav {
-    text-align: center;
-    margin-bottom: 40px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-  }
+    header {
+      text-align: center;
+      padding: 40px 20px 10px;
+    }
 
-  nav span {
-    margin: 0 15px;
-  }
+    header h1 {
+      font-size: 36px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
 
-  .services {
-    max-width: 600px;
-    margin: auto;
-  }
+    .subtitle {
+      font-size: 14px;
+      margin-bottom: 30px;
+      color: #666;
+    }
 
-  .service {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
+    nav {
+      text-align: center;
+      margin-bottom: 30px;
+    }
 
-  .service-header {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #222;
-    text-decoration: none;
-  }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #444;
+      font-weight: 600;
+    }
 
-  .service-header:hover {
-    color: #a67c00;
-  }
-</style>
+    section {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      padding: 0 20px;
+    }
+
+    section h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    ul li {
+      margin: 10px 0;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #0077aa;
+      font-weight: 500;
+    }
+
+    footer {
+      background-color: #eaeaea;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Adresa -->
+  <div class="marquee"><span>Svete Ane 10, Osijek</span></div>
+
+  <!-- Naslov -->
   <header>
     <h1>LUMINUS BEAUTY</h1>
-    <nav>
-      <span>TRETMANI</span> | <span>EDUKACIJE</span> | <span>KONTAKT</span>
-    </nav>
+    <div class="subtitle">you, but better</div>
   </header>
 
-  <div class="services">
-    <div class="service">
+  <!-- Navigacija -->
+  <nav>
+    <a href="#tretmani">TRETMANI</a> |
+    <a href="#edukacije">EDUKACIJE</a> |
+    <a href="#kontakt">KONTAKT</a>
+  </nav>
+
+  <!-- Tretmani -->
+  <section id="tretmani">
+    <h2>Naši tretmani</h2>
+    <ul>
       <li><a href="puder-obrve.html">Puder obrve</a></li>
-    </div>
-    <div class="service">
-      <a href="lip-blush.html" class="service-header">Lip Blush – polutrajna šminka usana</a>
-    </div>
-    <div class="service">
-      <a href="lash-lift.html" class="service-header">Lash Lift – Prirodno podignute i uvijene trepavice</a>
-    </div>
-    <!-- Ostale usluge po potrebi dodaj -->
-  </div>
+      <li><a href="#">Lip blush</a></li>
+      <li><a href="#">Lash lift</a></li>
+      <li><a href="#">Brow lift</a></li>
+      <li><a href="#">Nokti</a></li>
+      <li><a href="#">Piercing</a></li>
+    </ul>
+  </section>
+
+  <!-- Edukacije -->
+  <section id="edukacije">
+    <h2>Edukacije</h2>
+    <ul>
+      <li><a href="#">Edukacija za puder obrve</a></li>
+      <li><a href="#">Edukacija za lip blush</a></li>
+      <li><a href="#">Edukacija za lash & brow lift</a></li>
+      <li><a href="#">Edukacije za tetoviranje</a></li>
+    </ul>
+  </section>
+
+  <!-- O nama -->
+  <section id="o-nama">
+    <h2>O nama</h2>
+    <p style="text-align: center;">
+      Dobrodošli u Luminus Beauty – tvoj prostor ljepote, elegancije i profesionalne njege.
+      Naš cilj je pružiti vrhunsku uslugu i znanje kroz tretmane i edukacije koje prilagođavamo svakom klijentu.
+    </p>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p style="text-align: center;">
+      📞 099 869 6029<br />
+      📧 antonia.sorda@icloud.com
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Luminus Beauty | Svete Ane 10, Osijek
+  </footer>
+
 </body>
 </html>
